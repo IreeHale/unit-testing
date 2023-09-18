@@ -10,7 +10,7 @@ let numbers = [
 
 
 describe('Testing multiply() function', () => {
-    test.each(numbers)('Multiply a * b', (a, b, c) => {
+    test.each(numbers)('Multiply %i * %b = %i', (a, b, c) => {
         expect(multiply(a,b)).toBe(c)
     })
     //test('multiply two numbers and it should return the total', () => {
